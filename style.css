@@ -91,3 +91,20 @@ body {
 .c-latest-small-4 {
     background-image: url(./Assets/Images/lastest-news-small-4.jpg);
 }
+
+.c-banner-text-big {
+    right: 1%;
+    top: 40%;
+}
+
+.c-editor-top-image {
+    height: 400px;
+    background-image: url(./Assets/Images/editors-pick-wide.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.c-editors-bottom-image {
+    min-width: 200px;
+}
