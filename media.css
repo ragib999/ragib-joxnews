@@ -1,0 +1,14 @@
+@media screen and (max-width: 576px) {
+    .c-latest-small-1,
+    .c-latest-small-2,
+    .c-latest-small-3,
+    .c-latest-small-4 {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-collapse {
+        flex-grow: 1;
+    }
+}

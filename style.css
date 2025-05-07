@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Switzer";
+    src: url(./Assets/Font/Switzer-Variable.ttf);
+}
+
+* {
+    font-family: "Switzer", system-ui, -apple-system, BlinkMacSystemFont, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: #fffefa;
+}
+
+.c-navbar {
+    background-color: #fffefa;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-item {
+    &:hover {
+        border-bottom: 1px solid #cf412b;
+    }
+}
+
+.c-navbar-brand {
+    padding-right: 9rem;
+}
+
+.c-searchbar {
+    background-color: #fff;
+
+    > input {
+        font-size: 0.9rem;
+        padding-left: 2rem;
+    }
+}
+
+.c-nav-2 {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.c-nav-2 > p {
+    border-bottom: 2px solid transparent;
+    transition: border 150ms ease-in-out;
+
+    &:first-child {
+        border-bottom-color: #cf412b;
+    }
+
+    &:hover {
+        border-bottom-color: #cf412b;
+    }
+}
+
+.c-lastest-big {
+    height: 580px;
+    background-image: url(./Assets/Images/lastest-news-big.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.c-latest-small-1,
+.c-latest-small-2,
+.c-latest-small-3,
+.c-latest-small-4 {
+    min-width: 300px;
+    aspect-ratio: 18/12;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.c-latest-small-1 {
+    background-image: url(./Assets/Images/lastest-news-small-1.jpg);
+}
+
+.c-latest-small-2 {
+    background-image: url(./Assets/Images/lastest-news-small-2.jpg);
+}
+
+.c-latest-small-3 {
+    background-image: url(./Assets/Images/lastest-news-small-3.jpg);
+}
+
+.c-latest-small-4 {
+    background-image: url(./Assets/Images/lastest-news-small-4.jpg);
+}

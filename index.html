@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Joxnews</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="./Assets/Icons/favicon.svg"
+            type="image/x-icon"
+        />
+
+        <!-- Bootstrap CSS v5.3.2 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="media.css" />
+    </head>
+
+    <body>
+        <!-- Header Start -->
+        <header class="sticky-top">
+            <nav class="c-navbar navbar navbar-expand-lg pb-3">
+                <div
+                    class="container-fluid container-lg d-flex justify-content-between"
+                >
+                    <i
+                        class="fa-solid fa-bars me-3 fs-4 d-none d-lg-inline"
+                    ></i>
+                    <button
+                        class="navbar-toggler order-4"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul
+                            class="d-flex d-lg-none navbar-nav me-auto mb-2 mb-lg-0"
+                        >
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-normal text-black"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-normal text-black"
+                                    href="#"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-normal text-black"
+                                    href="#"
+                                    >Latest News</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-normal text-black"
+                                    href="#"
+                                    >Author</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-normal text-black"
+                                    href="#"
+                                    >Subscription</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-normal text-black"
+                                    href="#"
+                                    >Podcast</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-normal text-black"
+                                    href="#"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                        <form class="d-flex order-0" role="search">
+                            <div class="c-searchbar position-relative">
+                                <i
+                                    style="top: 9px; left: 9px"
+                                    class="fa-solid fa-magnifying-glass position-absolute"
+                                ></i>
+                                <input
+                                    class="form-control"
+                                    type="search"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                    <a
+                        class="c-navbar-brand navbar-brand order-1 mx-0 mx-lg-auto"
+                        href="#"
+                        ><img
+                            src="./Assets/Icons/logo-black.svg"
+                            alt="Logo Black"
+                    /></a>
+                    <div class="order-3 ms-auto ms-lg-0 me-2 me-lg-0">
+                        <span class="fw-medium">Cart</span>
+                        <div class="badge bg-danger rounded-circle">0</div>
+                        <button
+                            class="btn btn-dark ms-2 d-none d-lg-inline-block"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Nav 2 -->
+            <div class="c-navbar container-fluid d-none d-lg-block">
+                <div
+                    class="c-nav-2 d-flex justify-content-center align-items-center gap-5"
+                >
+                    row-cols-1
+                    <p class="md-0 py-4">
+                        <a
+                            class="text-decoration-none text-danger fw-normal"
+                            href="#"
+                            >Home</a
+                        >
+                    </p>
+                    <p class="m-0 py-4">
+                        <a
+                            class="text-decoration-none text-black fw-normal"
+                            href="#"
+                            >About</a
+                        >
+                    </p>
+                    <p class="m-0 py-4">
+                        <a
+                            class="text-decoration-none text-black fw-normal"
+                            href="#"
+                            >Latest News</a
+                        >
+                    </p>
+                    <p class="m-0 py-4">
+                        <a
+                            class="text-decoration-none text-black fw-normal"
+                            href="#"
+                            >Author</a
+                        >
+                    </p>
+                    <p class="m-0 py-4">
+                        <a
+                            class="text-decoration-none text-black fw-normal"
+                            href="#"
+                            >Subscription</a
+                        >
+                    </p>
+                    <p class="m-0 py-4">
+                        <a
+                            class="text-decoration-none text-black fw-normal"
+                            href="#"
+                            >Podcast</a
+                        >
+                    </p>
+                    <p class="m-0 py-4">
+                        <a
+                            class="text-decoration-none text-black fw-normal"
+                            href="#"
+                            >Contact</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero Start -->
+        <section style="margin-top: 50px; margin-bottom: 150px">
+            <div class="container-fluid container-lg">
+                <div class="row">
+                    <!-- Hero big -->
+                    <div class="col-12 col-xl-8">
+                        <img
+                            class="img-fluid"
+                            src="./Assets/Images/hero-big.jpg"
+                            alt="Hero big"
+                        />
+                        <h1 class="fw-normal my-3">
+                            Global Climate Summit Yields Mixed Results on Key
+                            Agreements
+                        </h1>
+                        <div
+                            class="d-flex align-items-center justify-content-between"
+                        >
+                            <p
+                                style="color: #6d6d6d"
+                                class="fw-medium w-75 m-0"
+                            >
+                                The global stock market has reached
+                                unprecedented levels, buoyed by optimistic
+                                economic forecasts and strong corporate
+                                earnings.
+                            </p>
+                            <!-- Hero Big Author -->
+                            <div
+                                style="border-left: 1px solid #d7d7d7"
+                                class="d-flex align-items-center ps-3"
+                            >
+                                <img
+                                    width="50"
+                                    height="50"
+                                    class="rounded-circle me-2"
+                                    src="./Assets/Images/hero-author.jpg"
+                                    alt="Hero Author"
+                                />
+                                <div
+                                    class="d-flex flex-column justify-content-between"
+                                >
+                                    <p class="fw-semibold mb-0">
+                                        Michael Brown
+                                    </p>
+                                    <p
+                                        style="
+                                            font-size: 0.9rem;
+                                            color: #6d6d6d;
+                                        "
+                                        class="mb-0"
+                                    >
+                                        December 16, 2024
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Small -->
+                    <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-1">
+                            <div
+                                style="border-bottom: 1px solid #d7d7d7"
+                                class="col d-flex pb-3"
+                            >
+                                <img
+                                    width="200"
+                                    class="img-fluid"
+                                    src="./Assets/Images/hero-small-1.jpg"
+                                    alt="Hero Small 1"
+                                />
+                                <div class="ms-3">
+                                    <h4 class="h5 text-capitalize">
+                                        Stock market hits record high amid
+                                        economic optimism
+                                    </h4>
+                                    <div>
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Business</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            8 Min</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="border-bottom: 1px solid #d7d7d7"
+                                class="col d-flex py-3"
+                            >
+                                <img
+                                    width="200"
+                                    class="img-fluid"
+                                    src="./Assets/Images/hero-small-2.jpg"
+                                    alt="Hero Small 2"
+                                />
+                                <div class="ms-3">
+                                    <h4 class="h5 text-capitalize">
+                                        New regulations put tech giants under
+                                        the spotlight
+                                    </h4>
+                                    <div>
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Technology</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            6 Min</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="border-bottom: 1px solid #d7d7d7"
+                                class="col d-flex py-3"
+                            >
+                                <img
+                                    width="200"
+                                    class="img-fluid"
+                                    src="./Assets/Images/hero-small-3.jpg"
+                                    alt="Hero Small 3"
+                                />
+                                <div class="ms-3">
+                                    <h4 class="h5 text-capitalize">
+                                        Health innovations to watch in 2024
+                                    </h4>
+                                    <div>
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Health</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            7 Min</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="border-bottom: 1px solid #d7d7d7"
+                                class="col d-flex py-3"
+                            >
+                                <img
+                                    width="200"
+                                    class="img-fluid"
+                                    src="./Assets/Images/hero-small-4.jpg"
+                                    alt="Hero Small 4"
+                                />
+                                <div class="ms-3">
+                                    <h4 class="h5 text-capitalize">
+                                        Blockchain beyond cryptocurrency:
+                                        revolutionizing industries
+                                    </h4>
+                                    <div>
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Technology</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            5 Min</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+
+        <!-- Latest News Start -->
+        <section style="margin-bottom: 100px">
+            <div class="container-fluid container-lg">
+                <!-- Section Title -->
+                <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                >
+                    <h3 class="h1 fw-normal">Latest News</h3>
+                    <p class="m-0">
+                        <a
+                            href="#"
+                            style="font-size: 0.9rem"
+                            class="text-decoration-none text-danger fw-medium"
+                            >View All
+                            <i class="fa-solid fa-arrow-right-long"></i
+                        ></a>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <!-- Latest Big -->
+                    <div class="col-12 col-xl-6">
+                        <div class="c-lastest-big w-100"></div>
+                        <div>
+                            <div class="py-3">
+                                <span
+                                    style="
+                                        border-right: 1px solid black;
+                                        color: #6d6d6d;
+                                    "
+                                    class="fw-medium pe-3"
+                                    >Politics</span
+                                >
+                                <span
+                                    style="color: #6d6d6d"
+                                    class="fw-medium ms-2"
+                                    ><i class="fa-regular fa-clock"></i> 8
+                                    Min</span
+                                >
+                            </div>
+                            <h4 class="text-capitalize">
+                                Global summit 2024: leaders address climate,
+                                trade, and security challenges
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-6 mt-5 mt-xl-0">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div
+                                class="col d-flex flex-row flex-md-column mb-4"
+                            >
+                                <div class="c-latest-small-1"></div>
+                                <div class="ms-3 ms-md-0">
+                                    <div class="py-3">
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Technology</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            5 Min</span
+                                        >
+                                    </div>
+                                    <h4
+                                        style="font-size: 1.1rem"
+                                        class="text-capitalize"
+                                    >
+                                        Blockchain beyond cryptocurrency:
+                                        revolutionizing industries
+                                    </h4>
+                                </div>
+
+                                <hr class="d-none d-md-block" />
+                            </div>
+
+                            <div
+                                class="col d-flex flex-row flex-md-column mb-4"
+                            >
+                                <div class="c-latest-small-2"></div>
+                                <div class="ms-3 ms-md-0">
+                                    <div class="py-3">
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Technology</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            9 Min</span
+                                        >
+                                    </div>
+                                    <h4
+                                        style="font-size: 1.1rem"
+                                        class="text-capitalize"
+                                    >
+                                        Exploring the future of space
+                                        exploration beyond mars
+                                    </h4>
+                                </div>
+
+                                <hr class="d-none d-md-block" />
+                            </div>
+
+                            <div
+                                class="col d-flex flex-row flex-md-column my-4"
+                            >
+                                <div class="c-latest-small-3"></div>
+                                <div class="ms-3 ms-md-0">
+                                    <div class="py-3">
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Health</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            5 Min</span
+                                        >
+                                    </div>
+                                    <h4
+                                        style="font-size: 1.1rem"
+                                        class="text-capitalize"
+                                    >
+                                        The role of fitness in chronic disease
+                                        management
+                                    </h4>
+                                </div>
+
+                                <hr class="d-none d-md-block" />
+                            </div>
+
+                            <div
+                                class="col d-flex flex-row flex-md-column my-4"
+                            >
+                                <div class="c-latest-small-4"></div>
+                                <div class="ms-3 ms-md-0">
+                                    <div class="py-3">
+                                        <span
+                                            style="
+                                                border-right: 1px solid black;
+                                                color: #6d6d6d;
+                                            "
+                                            class="fw-medium pe-3"
+                                            >Technology</span
+                                        >
+                                        <span
+                                            style="color: #6d6d6d"
+                                            class="fw-medium ms-2"
+                                            ><i class="fa-regular fa-clock"></i>
+                                            6 Min</span
+                                        >
+                                    </div>
+                                    <h4
+                                        style="font-size: 1.1rem"
+                                        class="text-capitalize"
+                                    >
+                                        The science of sleep: how to rest better
+                                        in a 24/7 world
+                                    </h4>
+                                </div>
+
+                                <hr class="d-none d-md-block" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest News End -->
+    </body>
+</html>
