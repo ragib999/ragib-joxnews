@@ -93,7 +93,7 @@ body {
 }
 
 .c-banner-text-big {
-    right: 1%;
+    right: 0;
     top: 40%;
 }
 
@@ -130,4 +130,9 @@ body {
 .c-tech-image-3 {
     height: 300px;
     background-image: url(./Assets/Images/technology-3.jpg);
+}
+
+.c-banner-text-big {
+    top: 70%;
+    right: 0;
 }
