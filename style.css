@@ -136,3 +136,46 @@ body {
     top: 70%;
     right: 0;
 }
+
+.c-podcast-image-1,
+.c-podcast-image-2,
+.c-podcast-image-3 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.c-podcast-image-1 {
+    background-image: url(./Assets/Images/podcast-1.jpg);
+}
+
+.c-podcast-image-2 {
+    background-image: url(./Assets/Images/podcast-2.jpg);
+}
+
+.c-podcast-image-3 {
+    background-image: url(./Assets/Images/podcast-3.jpg);
+}
+
+.c-overlay {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 50%
+    );
+}
+
+.c-playbutton {
+    height: 60px;
+    aspect-ratio: 1/1;
+    background-color: #cf412b;
+    cursor: pointer;
+}
+
+.c-socials-container {
+    height: 50px;
+    aspect-ratio: 1/1;
+    border: 1px solid #6d6d6d;
+    background-color: transparent;
+}
